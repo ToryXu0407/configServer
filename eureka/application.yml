@@ -1,28 +1,9 @@
-#server.port=0
-#  eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:8761/eureka/ ,
-#  http://${eureka.instance.hostname}:8761/eureka/
-
-
-#server:
-#  port: 0
-#
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://${eureka.instance.hostname}:8761/eureka/ ,
-#        http://${eureka.instance.hostname}:8761/eureka/
 server:
   port: 8080
-spring:
-  application:
-    name: toryxu
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/ToryXu0407/configServer.git
-          username:  toryxu0407                                                       # Git仓库的账号
-          password:  Xujiajun9527                                                       # Git仓库的密码
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/
 logging:
   level:
     org.springframework.cloud: DEBUG
