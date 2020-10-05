@@ -20,3 +20,5 @@ spring:
       server:
         git:
           uri: https://github.com/ToryXu0407/configServer.git
+          server:
+            port: 0
