@@ -15,10 +15,10 @@ import javax.annotation.PostConstruct;
 public class TestConfig {
 
     @Value("${server.port}")
-
+    private String port;
 
     @PostConstruct
-    {
-
+    public void sout() {
+        System.out.println("port:" + port);
     }
 }
