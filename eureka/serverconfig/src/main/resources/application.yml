@@ -12,7 +12,7 @@
 #      defaultZone: http://${eureka.instance.hostname}:8761/eureka/ ,
 #        http://${eureka.instance.hostname}:8761/eureka/
 server:
-  port: 8080
+  port: 8081
 spring:
   application:
     name: toryxu
@@ -21,9 +21,6 @@ spring:
       server:
         git:
           uri: https://github.com/ToryXu0407/configServer.git
-          username:  toryxu0407                                                       # Git仓库的账号
-          password:  Xujiajun9527                                                       # Git仓库的密码
-logging:
-  level:
-    org.springframework.cloud: DEBUG
-    org.springframework.boot: DEBUG
+          #  path可以逗号分隔写多个，并支持通配符*
+          default-label: master
+          search-paths: eureka
