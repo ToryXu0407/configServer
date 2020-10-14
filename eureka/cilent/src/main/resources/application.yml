@@ -13,8 +13,10 @@ server:
 #                   http://${eureka.instance.hostname}:8761/eureka/
 
 spring:
+  profiles:
+    active: dev2
   application:
-    name: application-dev
+    name: application
   cloud:
     config:
       uri: http://localhost:8888

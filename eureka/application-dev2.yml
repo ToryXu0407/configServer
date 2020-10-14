@@ -1,3 +1,5 @@
+server:
+   port: 8111
 user:
   userName: dev2/wlg
   sex: 男
