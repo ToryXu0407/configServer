@@ -14,7 +14,7 @@ server:
 
 spring:
   application:
-    name: toryxu
+    name: dev
   cloud:
     config:
-      url: http://localhost:8080
+      uri: http://localhost:8080
