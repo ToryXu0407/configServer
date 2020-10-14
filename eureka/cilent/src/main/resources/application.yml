@@ -14,7 +14,7 @@ server:
 
 spring:
   application:
-    name: dev
+    name: application-dev
   cloud:
     config:
       uri: http://localhost:8888

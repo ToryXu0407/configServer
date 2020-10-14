@@ -1,0 +1,6 @@
+server:
+  port: 8081
+user:
+  userName: dev/prod
+  sex: 男
+  age: 18
