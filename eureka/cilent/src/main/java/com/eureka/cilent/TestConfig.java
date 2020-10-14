@@ -17,6 +17,10 @@ public class TestConfig {
     @Value("${server.port}")
     private String port;
 
+    @Value("${user.userName}")
+    private String userName;
+
+
 //    @Value("${user.userName}")
 //    private String userName;
 
@@ -24,6 +28,6 @@ public class TestConfig {
     @PostConstruct
     public void sout() {
         System.out.println("port:" + port);
-//        System.out.println("userName:" + userName);
+        System.out.println("userName:" + userName);
     }
 }
